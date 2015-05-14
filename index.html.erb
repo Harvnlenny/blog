@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @page_title %></title>
+</head>
+<body>
+  <img src="ice_cream.gif" height="100" width ="200" alt="Ice Cream" />
+  <h1><%= @page_title %></h1>
+  <ul><% @ice_cream.each do |flavor| %>
+    <li><%= flavor %></li>
+  <% end %></ul>
+</body>
+</html>
