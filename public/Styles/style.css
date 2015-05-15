@@ -1,0 +1,17 @@
+header {
+  background-color: black;
+  color:red;
+  text-align: right
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center
+}
+
+footer {
+  background-color: black;
+  color: red;
+
+}

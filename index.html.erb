@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= @page_title %></title>
+  <head>
+    <link rel="stylesheet" href=Styles/style.css>
+    
+  <title>Harvey Girls</title>
+  <header> My first Blog </header>
 </head>
 <body>
-  <img src="ice_cream.gif" height="100" width ="200" alt="Ice Cream" />
-  <h1><%= @page_title %></h1>
-  <ul><% @ice_cream.each do |flavor| %>
-    <li><%= flavor %></li>
-  <% end %></ul>
+  <div>
+    <% @posts.each do |post| %>
+      <h1><%= post['title'] %></h1>
+
+      <div>
+        <img src="<%= post['image'] %>" style="width:300px;height:500px">
+      
+        <p><%= post['body'] %></p>
+      </div>
+    <% end %>
 </body>
 </html>
+<footer>created by Aaron Harvey 13 May 2015</footer>
